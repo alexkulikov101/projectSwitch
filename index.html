@@ -2,13 +2,598 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/normailize.css">
+  <title>Switch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
-123
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class=" page-header">
+    <nav class="page-header__nav main-nav">
+<ul class="main-nav__list">
+  <li class="main-nav__item">
+    <a class="main-nav__link main-nav__link--active">Home</a>
+  </li>
+  <li class="main-nav__item">
+    <a class="main-nav__link" href="#">What we do? </a>
+  </li>
+  <li class="main-nav__item">
+    <a class="main-nav__link" href="#">Testimonial </a>
+  </li>
+  <li class="main-nav__item">
+    <a class="main-nav__link" href="#">Contact Us</a>
+  </li>
+</ul>
+<a class="main-nav__logo logo" href="#">
+  <p class="logo__text">
+    Switch
+  </p>
+</a>
+
+<form class="main-nav__search search" action="#" name="search" method="get">
+  <label class="search__label" for="search"><input class="search__field" id="search" type="text" name="q" placeholder="Search">
+      <span class="visually-hidden">Строка поиска</span>
+      </label>
+      <button class="search__btn" type="submit"><span class="visually-hidden">Кнопка поиска</span></button>
+    </form>
+
+  </nav>
+  <div class="page-header__caption">
+  <h1 class="page-header__title">Art is Eternal Happiness</h1>
+  <button class="button-green page-header__btn" type="button">WORK WITH US</button>
+</div>
+<button class="button-transparent page-header__btn-trt" type="button">scroll down &darr;</button>
+</header>
+<section class="advantages">
+  <div class=" heading ">
+    <h2 class="heading__title">WHAT WE DO</h2>
+    <p class="heading__description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet</p>
+  </div>
+  <ul class="advantages__list">
+    <li class="advantages__item advantages__item--icon-camera">
+      <h3 class="advantages__subtitle">Lorem Ipsum</h3>
+      <p class="advantages__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
+      <button class="button-green advantages__btn">Learn more</button>
+    </li>
+    <li class="advantages__item advantages__item--icon-speed">
+      <h3 class="advantages__subtitle">Lorem Ipsum</h3>
+      <p class="advantages__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
+      <button class="button-green advantages__btn">Learn more</button>
+    </li>
+    <li class="advantages__item advantages__item--icon-portfolio">
+      <h3 class="advantages__subtitle">Lorem Ipsum</h3>
+      <p class="advantages__text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,</p>
+      <button class="button-green advantages__btn">Learn more</button>
+    </li>
+  </ul>
+
+
+</section>
+<section class="work">
+<div class=" heading ">
+  <h2 class="heading__title">OUR LATEST WORK</h2>
+<p class="heading__description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+</div>
+<div class="work__tabs tabs">
+  <button class="tabs__btn tabs__btn--photo">Photography</button>
+  <button class="tabs__btn tabs__btn--design">Design</button>
+  <button class="tabs__btn tabs__btn--print">Print</button>
+</div>
+<ul class="work__gallery gallery">
+  <li class="gallery__item">
+  <picture>
+    <source type="image/webp" srcset="img/forest.webp">
+    <img class="gallery__picture" src="img/forest.jpg" width="160" height="160" alt="картинка">
+  </picture>
+</li>
+<li class="gallery__item">
+<picture>
+  <source type="image/webp" srcset="img/imac.webp">
+    <img class="gallery__picture" src="img/imac.jpg" width="160" height="160" alt="картинка">
+  </picture>
+</li>
+<li class="gallery__item">
+  <picture>
+    <source type="image/webp" srcset="img/cake.webp">
+    <img class="gallery__picture" src="img/cake.jpg" width="160" height="160" alt="картинка">
+  </picture>
+</li>
+<li class="gallery__item">
+  <picture>
+    <source type="image/webp" srcset="img/cat.webp">
+    <img class="gallery__picture" src="img/cat.jpg" width="160" height="160" alt="картинка">
+  </picture>
+</li>
+<li class="gallery__item">
+  <picture>
+    <source type="image/webp" srcset="img/macbook.webp">
+      <img class="gallery__picture" src="img/macbook.jpg" width="160" height="160" alt="картинка">
+    </picture>
+  </li>
+  <li class="gallery__item">
+    <picture>
+      <source type="image/webp" srcset="img/accessories.webp">
+      <img class="gallery__picture" src="img/accessories.jpg" width="160" height="160" alt="картинка">
+    </picture>
+  </li>
+  <li class="gallery__item">
+    <picture>
+      <source type="image/webp" srcset="img/cooking.webp">
+      <img class="gallery__picture" src="img/cooking.jpg" width="160" height="160"  alt="картинка">
+    </picture>
+  </li>
+  <li class="gallery__item">
+    <picture>
+      <source type="image/webp" srcset="img/nail.webp">
+      <img class="gallery__picture" src="img/nail.jpg" width="160" height="160" alt="картинка">
+    </picture>
+  </li>
+  <li class="gallery__item">
+    <picture>
+    <source type="image/webp" srcset="img/heart.webp">
+        <img class="gallery__picture" src="img/heart.jpg" width="160" height="160" alt="картинка">
+      </picture>
+    </li>
+    <li class="gallery__item">
+      <picture>
+        <source type="image/webp" srcset="img/flowers.webp">
+        <img class="gallery__picture" src="img/flowers.jpg" width="160" height="160" alt="картинка">
+      </picture>
+    </li>
+  </ul>
+  <button class="button-transparent work__btn-trt" type="button">View more work</button>
+</section>
+<section class="feedback">
+  <div class=" heading ">
+  <h2 class="heading__title">TESTIMONIALS</h2>
+    <p class="heading__description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+  </div>
+  <blockquote class="feedback__box">
+    <p class="feedback__text">
+      “Awalnya saya tidak menderita penyakit apapun,
+      namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan
+      tidak menderita penyakit apapun!”
+    </p>
+    <div class="feedback__avtor-wrapper">
+      <p class="feedback__avatar">
+      <picture>
+      <source type="image/webp" srcset="img/ava.webp">
+        <img class="feedback__image" src="img/ava.png" width="46" height="46" alt="Аватар автора">
+      </picture>
+    </p>
+    <p class="feedback__avtor">
+    <cite class="feedback__avtor-name">
+        <span class="feedback__mr">Mr. Herp</span>
+        <span class="feedback__inc">CEO of Meme, Inc.</span>
+      </cite>
+    </p>
+  </div>
+</blockquote>
+
+</section>
+<section class="client">
+<div class=" heading ">
+<h2 class="heading__title">OUR HAPPY CLIENT</h2>
+  <p class="heading__description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+</div>
+<ul class="client__list">
+  <li class="client__item">
+  <picture>
+  <source type="image/webp" srcset="img/Googlelogo.webp">
+    <img src="img/Googlelogo.png" width="145" height="55" alt="картинка">
+  </picture>
+</li>
+<li class="client__item">
+<picture>
+    <source type="image/webp" srcset="img/Yahoo_Logo.webp">
+      <img src="img/Yahoo_Logo.png" width="140" height="27" alt="картинка">
+    </picture>
+  </li>
+  <li class="client__item">
+  <picture>
+  <source type="image/webp" srcset="img/MSFT_logo_png.webp">
+    <img src="img/MSFT_logo_png.png" width="144" height="31" alt="картинка">
+  </picture>
+</li>
+<li class="client__item">
+  <picture>
+  <source type="image/webp" srcset="img/Intel-logo.svg.webp">
+    <img src="img/Intel-logo.svg.png" width="103" height="68" alt="картинка">
+  </picture>
+</li>
+<li class="client__item">
+<picture>
+  <source type="image/webp" srcset="img/qualcom.webp">
+      <img src="img/qualcom.png" width="151" height="34" alt="картинка">
+  </picture>
+  </li>
+  <li class="client__item">
+  <picture>
+    <source type="image/webp" srcset="img/Cisco_logo.svg.webp">
+    <img src="img/Cisco_logo.svg.png" width="125" height="65" alt="картинка">
+  </picture>
+</li>
+<li class="client__item">
+  <picture>
+    <source type="image/webp" srcset="img/Apple-logo.webp">
+      <img src="img/Apple-logo.png" width="52" height="63" alt="картинка">
+    </picture>
+  </li>
+  <li class="client__item">
+  <picture>
+    <source type="image/webp" srcset="img/ASUS_Logo.webp">
+    <img src="img/ASUS_Logo.png" width="116" height="21" alt="картинка">
+  </picture>
+</li>
+</ul>
+<button class="button-transparent client__btn-trt" type="button">View more work</button>
+
+</section>
+<section class="team">
+  <div class=" heading ">
+    <h2 class="heading__title">MEET THE TEAM</h2>
+    <p class="heading__description">Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.</p>
+  </div>
+  <ul class="team__list">
+    <li class="team__item">
+      <p class="team__picture">
+      <picture>
+        <source type="image/webp" srcset="img/team1.webp">
+        <img class="team__img" src="img/team1.jpg" width="240" height="300" alt="картинка">
+      </picture>
+    </p>
+    <p class="team__name">Krisna Wijaya</p>
+    <ul class="team__social-icons social-icons">
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">соц сеть</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.1.webp">
+          <img class="social-icons__img" src="img/team1.1.png" alt="соц сеть" width="20" height="20" >
+          </picture>
+        </a>
+
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">Биханс</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.2.webp">
+              <img class="social-icons__img" src="img/team1.2.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">Твитер</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.3.webp">
+              <img class="social-icons__img" src="img/team1.3.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+      </ul>
+    </li>
+    <li class="team__item">
+      <p class="team__picture">
+      <picture>
+        <source type="image/webp" srcset="img/team2.webp">
+        <img class="team__img" src="img/team2.jpg" width="240" height="300" alt="картинка">
+      </picture>
+    </p>
+    <p class="team__name">Gabriel Yoshua</p>
+    <ul class="team__social-icons social-icons">
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">соц сеть</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.1.webp">
+            <img class="social-icons__img" src="img/team1.1.png" alt="соц сеть" width="20" height="20" >
+          </picture>
+        </a>
+
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">Биханс</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.2.webp">
+            <img class="social-icons__img" src="img/team1.2.png" alt="соц сеть" width="20" height="20" >
+          </picture>
+        </a>
+
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">Твитер</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.3.webp">
+          <img class="social-icons__img" src="img/team1.3.png" alt="соц сеть" width="20" height="20" >
+          </picture>
+        </a>
+
+      </li>
+    </ul>
+  </li>
+  <li class="team__item">
+    <p class="team__picture">
+      <picture>
+        <source type="image/webp" srcset="img/team3.webp">
+          <img class="team__img" src="img/team3.jpg" width="240" height="300" alt="картинка">
+        </picture>
+      </p>
+      <p class="team__name">Adik N.K.L</p>
+      <ul class="team__social-icons social-icons">
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">соц сеть</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.1.webp">
+              <img class="social-icons__img" src="img/team1.1.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">Биханс</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.2.webp">
+              <img class="social-icons__img" src="img/team1.2.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">Твитер</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.3.webp">
+              <img class="social-icons__img" src="img/team1.3.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+      </ul>
+    </li>
+    <li class="team__item">
+      <p class="team__picture">
+      <picture>
+        <source type="image/webp" srcset="img/team4.webp">
+        <img class="team__img" src="img/team4.jpg" width="240" height="300" alt="картинка">
+      </picture>
+    </p>
+    <p class="team__name">Zan D.J</p>
+    <ul class="team__social-icons social-icons">
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">соц сеть</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.1.webp">
+            <img class="social-icons__img" src="img/team1.1.png" alt="соц сеть" width="20" height="20" >
+          </picture>
+        </a>
+
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">Биханс</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.2.webp">
+              <img class="social-icons__img" src="img/team1.2.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">Твитер</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.3.webp">
+              <img class="social-icons__img" src="img/team1.3.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+      </ul>
+    </li>
+    <li class="team__item">
+      <p class="team__picture">
+      <picture>
+        <source type="image/webp" srcset="img/team5.webp">
+          <img class="team__img" src="img/team5.jpg" width="240" height="300" alt="картинка">
+        </picture>
+      </p>
+      <p class="team__name">Faizal Febri</p>
+      <ul class="team__social-icons social-icons">
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">соц сеть</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.1.webp">
+              <img class="social-icons__img" src="img/team1.1.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">Биханс</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.2.webp">
+              <img class="social-icons__img" src="img/team1.2.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+        </li>
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">Твитер</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.3.webp">
+              <img class="social-icons__img" src="img/team1.3.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="team__btn-wrapper">
+    <button class=" team__btn button-green page-header__btn" type="button">WORK WITH US</button>
+  </div>
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer__about-us about-us">
+    <p class="page-footer__block-title">
+      ABOUT US
+    </p>
+    <p class="about-us__text">
+      This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Ut aliquam massa nisl quis neque. Suspendisse in orci enim.Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus.
+    </p>
+    <ul class="team__social-icons social-icons about-us__icons">
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">соц сеть</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.1.webp">
+            <img class="social-icons__img" src="img/team1.1.png" alt="соц сеть" width="20" height="20" >
+          </picture>
+        </a>
+
+      </li>
+      <li class="social-icons__item">
+        <a class="social-icons__link" href="#">
+          <span class="visually-hidden">Биханс</span>
+          <picture>
+            <source type="image/webp" srcset="img/team1.2.webp">
+              <img class="social-icons__img" src="img/team1.2.png" alt="соц сеть" width="20" height="20" >
+            </picture>
+          </a>
+
+        </li>
+        <li class="social-icons__item">
+          <a class="social-icons__link" href="#">
+            <span class="visually-hidden">Твитер</span>
+            <picture>
+              <source type="image/webp" srcset="img/team1.3.webp">
+                <img class="social-icons__img" src="img/team1.3.png" alt="соц сеть" width="20" height="20" >
+              </picture>
+            </a>
+
+          </li>
+        </ul>
+
+      </div>
+      <div class="page-footer__recent-posts recent-posts">
+        <p class="page-footer__block-title">
+          RECENT POSTS
+        </p>
+        <ul class="recent-posts__list">
+          <li class="recent-posts__item">
+          <picture>
+            <source type="image/webp" srcset="img/small1.webp">
+            <img class="recent-posts__image" src="img/small1.jpg" width="53" height="53" alt="картинка стола">
+          </picture>
+          <p class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</p>
+          <button class="recent-posts__btn recent-posts__btn--green" type="button">MAGAZINE</button>
+        </li>
+        <li class="recent-posts__item">
+          <picture>
+            <source type="image/webp" srcset="img/small2.webp">
+              <img class="recent-posts__image" src="img/small2.jpg" width="53" height="53" alt="картинка кофе">
+            </picture>
+            <p class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</p>
+            <button class="recent-posts__btn recent-posts__btn--orange" type="button">UI DESIGN</button>
+          </li>
+          <li class="recent-posts__item">
+          <picture>
+            <source type="image/webp" srcset="img/small3.webp">
+            <img class="recent-posts__image" src="img/small3.jpg" width="53" height="53" alt="картинка гвоздь">
+          </picture>
+          <p class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</p>
+          <button class="recent-posts__btn recent-posts__btn--blue" type="button">PHOTOGRAPHY</button>
+        </li>
+        <li class="recent-posts__item">
+          <picture>
+            <source type="image/webp" srcset="img/small4.webp">
+              <img class="recent-posts__image" src="img/small4.jpg" width="53" height="53" alt="картинка цветы">
+            </picture>
+            <p class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</p>
+            <button class="recent-posts__btn recent-posts__btn--red" type="button">BOOK</button>
+          </li>
+          <li class="recent-posts__item">
+            <picture>
+              <source type="image/webp" srcset="img/small5.webp">
+              <img class="recent-posts__image" src="img/small5.jpg" width="53" height="53" alt="картинка сердечко">
+            </picture>
+          <p class="recent-posts__text">Lorem Ipsum Dolor Sit Amet.</p>
+            <button class="recent-posts__btn recent-posts__btn--yellow" type="button">UI DESIGN</button>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__contact-us contact-us">
+        <p class="page-footer__block-title">
+          CONTACT US
+        </p>
+        <p class="contact-us__adress">
+          10044 West 23th Street, Suite 721 <br>
+          New York NY 10010 <br>
+          Email: Username@email.com <br>
+          Phone: +1 (0) 123 4567 890 <br>
+          Fax: +1 (0) 321 4567 890
+        </p>
+        <form class="contact-us__form" action="#">
+        <p class="contact-us__field-wrapper">
+          <label class="contact-us__label" for="you-name"> <span class="visually-hidden">Введите свое имя</span>
+          <input class="contact-us__field contact-us__field--radius" type="text" id="you-name" name="you-name" placeholder="Your Name..">
+        </label>
+      </p>
+      <p class="contact-us__field-wrapper">
+        <label class="contact-us__label" for="you-mail"> <span class="visually-hidden"> Введите свой email</span>
+        <input class="contact-us__field" type="email" id="you-mail" name="you-mail" placeholder="Your Email..">
+      </label>
+    </p>
+    <p class="contact-us__field-wrapper">
+      <label for="message"> <span class="visually-hidden">Введите сообщение</span>
+        <textarea class="contact-us__textarea" name="message" id="message"  rows="7" placeholder="Your Message.."></textarea></label>
+      </p>
+      <button class="contact-us__btn" type="submit">Send</button>
+    </form>
+  </div>
+  <div class="page-footer__brands brands">
+  <p class="page-footer__block-title page-footer__block-title--dark">
+    As seen on
+  </p>
+  <ul class="brands__list">
+    <li class="brands__item">
+      <svg class="brands__image" width="97" height="48">
+      <use xlink:href="#icon-Cnn"></use>
+    </svg>
+
+  </li>
+  <li class="brands__item">
+    <svg class="brands__image" width="92" height="48">
+      <use xlink:href="#icon-tc"></use>
+    </svg>
+  </li>
+  <li class="brands__item">
+    <svg class="brands__image" width="164" height="47">
+    <use xlink:href="#icon-BBC"></use>
+  </svg>
+
+</li>
+<li class="brands__item">
+  <svg class="brands__image" width="337" height="45">
+  <use xlink:href="#icon-The_New_York_Times"></use>
+</svg>
+</li>
+</ul>
+</div>
+</footer>
 
 <script src="js/script.min.js"></script>
 </body>

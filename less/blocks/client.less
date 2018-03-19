@@ -1,0 +1,42 @@
+.client{
+  background-color: #f2f1f1;
+      padding-bottom: 62px;
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__item{
+    width: 220px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+  }
+  &__btn-trt{
+    position: relative;
+    width: 186px;
+    height: 40px;
+    margin: 0 auto;
+    color: #a59d9d;
+    background-color: #dddcdc;
+    &::after{
+      position: absolute;
+      content: "";
+      top: 16px;
+      right: 16px;
+      display: block;
+      width: 14px;
+      height: 10px;
+      background: url("../../img/arrow-left2.png");
+    }
+  }
+}

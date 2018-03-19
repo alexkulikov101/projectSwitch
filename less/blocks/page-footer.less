@@ -1,0 +1,36 @@
+.page-footer{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #333333;
+  &__block-title{
+    text-align: center;
+    padding-top: 31px;
+    margin-bottom: 24px;
+    position: relative;
+    font-family: @ff-m-lt;
+    font-size: 16px;
+    color: #dddddd;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    &:after{
+      position: absolute;
+      content: "";
+      display: block;
+      width: 30px;
+      height: 2px;
+      bottom: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #dddddd;
+    }
+    &--dark{
+      color: #101010;
+      &:after{
+        background-color: #101010;
+      }
+    }
+  }
+
+}

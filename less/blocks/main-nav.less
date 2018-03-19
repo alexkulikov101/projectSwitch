@@ -1,0 +1,31 @@
+.main-nav{
+  min-height: 40px;
+  &__list{
+    width: 410px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 65px;
+
+  }
+  &__item{
+    font-family: @ff-pn-rg;
+    font-size: 16px;
+  }
+  &__link{
+    text-decoration: none;
+    color: #ffffff;
+    padding-top: 5px;
+    &[href]:hover{
+      opacity: 0.9;
+      font-weight: bold;
+    }
+    &--active{
+      font-weight: bold;
+      border-top: 5px solid #54d154;
+    }
+  }
+}
